@@ -5,7 +5,6 @@ library(quantmod)
 #library(zoo)
 # data from yahoofinance
 getSymbols("CHFTRY=X", src = "yahoo", from = "2022-01-01", to = "2025-08-28")
-#save(dats,file = "~/Documents/codes_r_article/codes_finaux/data/real_data/chftry.RData")
 
 data_clean <- na.omit(Ad(`CHFTRY=X`))
 
