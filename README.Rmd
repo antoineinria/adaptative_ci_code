@@ -1,0 +1,33 @@
+---
+title: "Adaptive confidence intervals for extreme quantiles from heavy-tailed distributions"
+output: html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Implementation of the paper [Adaptive confidence intervals for extreme quantiles from heavy-tailed distributions](https://hal.science/hal-05322341) by A. Franchini, S. Girard and A. Dutfoy.
+
+## Abstract
+
+Extreme quantiles are standard risk measures in  financial or environmental contexts since they provide information on low-probability but high-impact events. The calculation of accurate confidence intervals on extreme quantiles is then of paramount importance to risk managers.
+The celebrated Weissman estimator is a simple way to compute such extreme quantiles from heavy-tailed distributions. 
+Asymptotic confidence intervals can also be built based on its asymptotic normality, but they may suffer from poor coverage properties in practice due to oversimplified estimations of the asymptotic bias and variance.
+We propose several higher order approximations of the Weissman estimator asymptotic distribution
+together with a data-driven procedure to automatically select the most appropriate one
+thanks to a supervised classification method.
+The discrepancy between theoretical and empirical coverages is studied using a new criterion  robust with respect to the choice of the number of tail observations involved in the Weissman estimator.
+The usefulness of the associated adaptive confidence interval is illustrated on an intensive simulation study as well as on two climatic and financial data sets.
+
+## Content
+
+The code files compute the algorithm to quantify the quality of the proposed confidence intervals of the paper as well as the adaptive confidence intervals using classification methods. The codes used to generate the graphs are also present.
+
+Several libraries need to be installed. The list is provided in `libraries.R`.
+
+The file `functions_ci.R`contains all functions that are used in the algorithms which are in the eponymous folder.
+
+The models as objects are not present in the repository due to a large size of the corresponding files, however they can be recreated in `modeles.R`and saved in a separate `.RData` file.
+
