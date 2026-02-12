@@ -1,6 +1,6 @@
 ---
 title: "Adaptive confidence intervals for extreme quantiles from heavy-tailed distributions"
-output: html_document
+output: github_document
 
 ---
 
@@ -30,4 +30,5 @@ Several libraries need to be installed. The list is provided in `libraries.R`.
 The file `functions_ci.R`contains all functions that are used in the algorithms which are in the eponymous folder.
 
 The models as objects are not present in the repository due to a large size of the corresponding files, however they can be recreated in `modeles.R`and saved in a separate `.RData` file.
+
 
